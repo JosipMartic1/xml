@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE osoba [
+    <!ELEMENT osoba (Ime, Prezime, MjestoStanovanja, Kontakt)>
+    <!ELEMENT MjestoStanovanja (Adresa, Grad, Drzava)>
+    <!ELEMENT Kontakt (Mobitel, KucniTelefon, Email)>
+
     <!ATTLIST osoba spol (M|Ž) #REQUIRED>
 ]>
 

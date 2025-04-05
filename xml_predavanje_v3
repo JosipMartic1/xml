@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Narudzba>
+    <Ime>Bobo</Ime>
+    <Prezime>Horvat</Prezime>
+    <MjestoStanovanja>
+        <Adresa>Ulica Jarun 2</Adresa>
+        <Grad>Zagreb</Grad>
+        <Drzava>Hrvatska</Drzava>
+    </MjestoStanovanja>
+    <NaruceniArtikl>
+        <Naziv>Boca vode</Naziv>
+        <Kolicina>3</Kolicina>
+        <Cijena>50</Cijena>
+    </NaruceniArtikl>
+</Narudzba>

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Narudzba [
+<!ELEMENT Narudzba (Ime, Prezime, MjestoStanovanja, NaruceniArtikl)>
+<!ELEMENT MjestoStanovanja (Adresa, Grad, Drzava)>
+<!ELEMENT NaruceniArtikl (Naziv, Kolicina, Cijena)>
+]>
+
 <Narudzba>
     <Ime>Bobo</Ime>
     <Prezime>Horvat</Prezime>

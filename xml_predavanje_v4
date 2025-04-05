@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE osoba [
+    <!ATTLIST osoba spol (M|Ž) #REQUIRED>
+]>
+
+<osoba spol="M">
+    <Ime>Bob</Ime>
+    <Prezime>Ivanić</Prezime>
+    <MjestoStanovanja>
+        <Adresa>Ulica Republike Francuske 32</Adresa>
+        <Grad>Split</Grad>
+        <Drzava>Hrvatska</Drzava>
+    </MjestoStanovanja>
+    <Kontakt>
+        <Mobitel>1234567890</Mobitel>
+        <KucniTelefon>x</KucniTelefon>
+        <Email>x</Email>
+    </Kontakt>
+</osoba>

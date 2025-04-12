@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--u schemi fali root element-->
+
+<dokument>
+    <ime>Ronaldinho</ime>
+    <cijena>19999999.99</cijena>
+    <godine>2005</godine>
+    <aktivan>false</aktivan>
+    <datumRodjenja>1985-03-02</datumRodjenja>
+    <vrijemePocetka>02:03:02</vrijemePocetka>
+</dokument>

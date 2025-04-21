@@ -1,0 +1,26 @@
+import requests
+from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
+
+url = "https://www.sofascore.com/hr/turnir/nogomet/croatia/hnl/17"  # or another site with a table
+headers = {"User-Agent": "Mozilla/5.0"}
+
+response = requests.get(url, headers=headers)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Pseudocode: Find the part of the HTML that has the table
+teams = soup.find_all(...)  # You'll need to inspect the page
+
+# Build XML structure
+root = ET.Element("hnl_table")
+
+for team in teams:
+    team_element = ET.SubElement(root, "team")
+    ET.SubElement(team_element, "name").text = ...
+    ET.SubElement(team_element, "points").text = ...
+    ET.SubElement(team_element, "position").text = ...
+    # Add more as needed
+
+# Save XML to file
+tree = ET.ElementTree(root)
+tree.write("hnl_standings.xml", encoding="utf-8", xml_declaration=True)
